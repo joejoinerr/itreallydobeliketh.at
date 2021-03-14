@@ -1,0 +1,30 @@
+{
+  "name": "itreallydobelikethat",
+  "version": "1.0.0",
+  "author": "Joe Joiner",
+  "private": true,
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1",
+    "@babel/cli": "^7.13.10",
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "@babel/register": "^7.13.8",
+    "autoprefixer": "^10.2.5",
+    "browser-sync": "^2.26.14",
+    "cssnano": "^4.1.10",
+    "del": "^6.0.0",
+    "gulp": "^4.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-load-plugins": "^2.0.6",
+    "gulp-newer": "^1.4.0",
+    "gulp-postcss": "^9.0.0",
+    "gulp-purgecss": "^4.0.2",
+    "gulp-rev": "^9.0.0",
+    "gulp-rev-rewrite": "^4.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "postcss-import": "^14.0.0",
+    "tailwindcss": "^2.0.3"
+  },
+  "dependencies": {},
+  "license": "MIT"
+}

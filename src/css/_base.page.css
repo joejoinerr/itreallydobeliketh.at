@@ -1,0 +1,17 @@
+/*------------------------------------*\
+  #PAGE
+\*------------------------------------*/
+
+/**
+ * 1. Improved default box model - http://goo.gl/3ed2H
+ */
+
+html {
+  box-sizing: border-box; /* [1] */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; /* [1] */
+}
