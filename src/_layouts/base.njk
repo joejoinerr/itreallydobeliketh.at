@@ -9,7 +9,9 @@
   <meta name="description" property="og:description" content="{{ description }}">
   {# <meta name="robots" content="index,follow"> #}
 
-  <link rel="canonical" href="">
+  {% set canonical = canonical | replace(site.root, '') %}
+  {% set canonicalHref = site.root + ( canonical or page.url ) %}
+  <link rel="canonical" href="{{ canonicalHref }}">
   <link rel="stylesheet" href="css/main.css">
 
   {# <meta property="og:title" content="">
