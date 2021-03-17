@@ -26,5 +26,8 @@
     "tailwindcss": "^2.0.3"
   },
   "dependencies": {},
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build": "npx @11ty/eleventy"
+  }
 }
