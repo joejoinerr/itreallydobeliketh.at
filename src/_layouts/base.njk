@@ -16,8 +16,16 @@
   {% endblock -%}
 </head>
 <body>
+  {% block header %}
+    <header>
+      <a href="{{ site.root + '/' }}">It Really Do Be Like That</a>
+    </header>
+  {% endblock %}
+
+  <main>
   {%- block body %}
-  {{ content | safe }}
+    {{ content | safe }}
   {%- endblock %}
+  </main>
 </body>
 </html>
