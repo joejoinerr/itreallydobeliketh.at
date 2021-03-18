@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>{{ title }}</title>
-  <meta name="description" property="og:description" content="{{ description }}">
+  {%- if description %}<meta name="description" property="og:description" content="{{ description }}">{% endif %}
   {# {% include 'metadata.njk' %} #}
 
   {% set canonical = canonical | replace(site.root, '') %}
@@ -15,10 +15,12 @@
   <link rel="canonical" href="{{ canonicalHref }}">
   <link rel="stylesheet" href="css/main.css">
 
-  {# <meta property="og:title" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-  <meta name="twitter:card" content="summary_large_image"> #}
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:url" content="{{ canonicalHref }}">
+  {%- if image %}
+    <meta property="og:image" content="{{ image }}">
+    <meta name="twitter:card" content="summary_large_image">
+  {%- endif %}
 
   <meta name="theme-color" content="#fafafa">
   {% endblock %}
