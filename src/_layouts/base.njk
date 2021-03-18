@@ -1,32 +1,32 @@
 <!doctype html>
 <html lang="en">
 <head>
-  {% block head %}
+  {%- block head %}
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  {% set canonical = canonical | replace(site.root, '') %}
-  {% set canonicalHref = site.root + ( canonical or page.url ) %}
+  {%- set canonical = canonical | replace(site.root, '') %}
+  {%- set canonicalHref = site.root + ( canonical or page.url ) %}
   <link rel="canonical" href="{{ canonicalHref }}">
   <link rel="stylesheet" href="css/main.css">
 
   <title>{{ title }}</title>
-  {%- if description %}<meta name="description" property="og:description" content="{{ description }}">{% endif %}
   <meta property="og:title" content="{{ title }}">
+  {% if description %}<meta name="description" property="og:description" content="{{ description }}">{% endif %}
   <meta property="og:url" content="{{ canonicalHref }}">
   {%- if image %}
     <meta property="og:image" content="{{ image }}">
     <meta name="twitter:card" content="summary_large_image">
   {%- endif %}
   {% if site.theme_color %}<meta name="theme-color" content="#fafafa">{% endif %}
-  {# {% include 'metadata.njk' %} #}
+  {#- {% include 'metadata.njk' %} #}
 
-  {% endblock %}
+  {%- endblock %}
 </head>
 <body>
-  {% block body %}
+  {%- block body %}
   {{ content | safe }}
-  {% endblock %}
+  {%- endblock %}
 </body>
 </html>
