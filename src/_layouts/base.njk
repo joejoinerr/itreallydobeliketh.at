@@ -19,9 +19,8 @@
     <meta property="og:image" content="{{ image }}">
     <meta name="twitter:card" content="summary_large_image">
   {%- endif %}
+  {% include 'metadata.njk' %}
   {% if site.theme_color %}<meta name="theme-color" content="#fafafa">{% endif %}
-  {#- {% include 'metadata.njk' %} #}
-
   {%- endblock %}
 </head>
 <body>

@@ -1,3 +1,4 @@
-{% for meta in page.metadata%}
+{% if noindex %}<meta name="robots" content="noindex">{% endif %}
+{%- for meta in metadata -%}
     <meta{% if meta.name %} name="{{ meta.name }}"{% endif %}{% if meta.property %} property="{{ meta.property }}"{% endif %}{% if meta.content %} content="{{ meta.content }}"{% endif %}>
-{% endfor %}
+{% endfor -%}
