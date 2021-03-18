@@ -12,15 +12,7 @@
   <link rel="stylesheet" href="css/main.css">
 
   <title>{{ title }}</title>
-  <meta property="og:title" content="{{ title }}">
-  {% if description %}<meta name="description" property="og:description" content="{{ description }}">{% endif %}
-  <meta property="og:url" content="{{ canonicalHref }}">
-  {%- if image %}
-    <meta property="og:image" content="{{ image }}">
-    <meta name="twitter:card" content="summary_large_image">
-  {%- endif %}
   {% include 'metadata.njk' %}
-  {% if site.theme_color %}<meta name="theme-color" content="#fafafa">{% endif %}
   {%- endblock %}
 </head>
 <body>

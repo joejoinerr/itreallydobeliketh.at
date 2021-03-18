@@ -1,4 +1,16 @@
+<meta property="og:title" content="{{ title }}">
+{% if description %}<meta name="description" property="og:description" content="{{ description }}">{% endif %}
+<meta property="og:url" content="{{ canonicalHref }}">
+
+{%- if image %}
+  <meta property="og:image" content="{{ image }}">
+  <meta name="twitter:card" content="summary_large_image">
+{%- endif %}
+
+{% if site.theme_color %}<meta name="theme-color" content="{{ site.theme_color }}">{% endif %}
+
 {% if noindex %}<meta name="robots" content="noindex">{% endif %}
+
 {%- for meta in metadata -%}
     <meta{% if meta.name %} name="{{ meta.name }}"{% endif %}{% if meta.property %} property="{{ meta.property }}"{% endif %}{% if meta.content %} content="{{ meta.content }}"{% endif %}>
 {% endfor -%}
