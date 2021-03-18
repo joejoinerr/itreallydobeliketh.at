@@ -6,23 +6,22 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{{ title }}</title>
-  {%- if description %}<meta name="description" property="og:description" content="{{ description }}">{% endif %}
-  {# {% include 'metadata.njk' %} #}
-
   {% set canonical = canonical | replace(site.root, '') %}
   {% set canonicalHref = site.root + ( canonical or page.url ) %}
   <link rel="canonical" href="{{ canonicalHref }}">
   <link rel="stylesheet" href="css/main.css">
 
+  <title>{{ title }}</title>
+  {%- if description %}<meta name="description" property="og:description" content="{{ description }}">{% endif %}
   <meta property="og:title" content="{{ title }}">
   <meta property="og:url" content="{{ canonicalHref }}">
   {%- if image %}
     <meta property="og:image" content="{{ image }}">
     <meta name="twitter:card" content="summary_large_image">
   {%- endif %}
+  {% if site.theme_color %}<meta name="theme-color" content="#fafafa">{% endif %}
+  {# {% include 'metadata.njk' %} #}
 
-  <meta name="theme-color" content="#fafafa">
   {% endblock %}
 </head>
 <body>
