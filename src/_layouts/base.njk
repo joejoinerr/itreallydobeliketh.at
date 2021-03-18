@@ -7,7 +7,7 @@
 
   <title>{{ title }}</title>
   <meta name="description" property="og:description" content="{{ description }}">
-  {# <meta name="robots" content="index,follow"> #}
+  {# {% include 'metadata.njk' %} #}
 
   {% set canonical = canonical | replace(site.root, '') %}
   {% set canonicalHref = site.root + ( canonical or page.url ) %}
