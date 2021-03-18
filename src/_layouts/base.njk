@@ -13,7 +13,7 @@
   {%- set canonicalHref = site.root + ( canonical or page.url ) %}
   <link rel="canonical" href="{{ canonicalHref }}">
   {% include 'metadata.njk' %}
-
+  {% endblock -%}
 </head>
 <body>
   {%- block body %}
