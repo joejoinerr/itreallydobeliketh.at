@@ -6,14 +6,14 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  {%- set canonical = canonical | replace(site.root, '') %}
-  {%- set canonicalHref = site.root + ( canonical or page.url ) %}
-  <link rel="canonical" href="{{ canonicalHref }}">
   <link rel="stylesheet" href="css/main.css">
 
   <title>{{ title }}</title>
+  {%- set canonical = canonical | replace(site.root, '') %}
+  {%- set canonicalHref = site.root + ( canonical or page.url ) %}
+  <link rel="canonical" href="{{ canonicalHref }}">
   {% include 'metadata.njk' %}
-  {%- endblock %}
+
 </head>
 <body>
   {%- block body %}
