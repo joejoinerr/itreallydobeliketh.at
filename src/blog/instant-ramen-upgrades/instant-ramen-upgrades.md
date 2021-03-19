@@ -1,5 +1,4 @@
 ---
-layout: post.njk
 title: Instant ramen upgrades
 date: 2021-03-13
 description: Upgrade a dull ramen with some veggies, condiments or other additions. Here are my picks!

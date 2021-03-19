@@ -1,5 +1,4 @@
 ---
-layout: post.njk
 title: Automatically switch network locations on macOS using Keyboard Maestro
 date: 2020-08-07
 description: Easily switch macOS locations by watching the network SSID with Keyboard Maestro, rather than using the Apple menu.
