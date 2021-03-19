@@ -1,0 +1,17 @@
+---
+layout: base.njk
+---
+
+{% block body %}
+  <p>
+    <strong><em>It really do be like that</em></strong> is a personal blog about anything and nothing, but mainly design, code, music and automation.
+  </p>
+
+  <div>
+    {% from 'feed-post.njk' import feed_post %}
+    {% for post in collections.posts %}
+      {# Use the feed_post component to keep format consistent #}
+      {{ feed_post(post) }}
+    {% endfor %}
+  </div>
+{% endblock %}
