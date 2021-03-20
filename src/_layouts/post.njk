@@ -7,7 +7,7 @@ layout: base.njk
     <header>
       <h1>{{ title }}</h1>
     </header>
-    <time datetime="{{ date.toISOString() }}">{{ date.toISOString() }}</time>
+    <time datetime="{{ date.toISOString() }}">{{ date.toISOString() | date('yyyy.LL.dd') }}</time>
     {{ content | safe }}
   </article>
 {% endblock %}
