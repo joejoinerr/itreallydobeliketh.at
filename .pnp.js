@@ -57,6 +57,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["imagemin-pngquant", "npm:9.0.2"],
             ["luxon", "npm:1.26.0"],
             ["npm-run-all", "npm:4.1.5"],
+            ["postcss", "npm:8.2.8"],
             ["postcss-import", "virtual:fc7cd3aa02fcda2d686d66feeff64d746ac49c17bc259496e0bcceab2cacded000acc4aaee8a9dc97499d39afd74772659713555069cc54736f96c2d54fd55e8#npm:14.0.0"],
             ["tailwindcss", "virtual:fc7cd3aa02fcda2d686d66feeff64d746ac49c17bc259496e0bcceab2cacded000acc4aaee8a9dc97499d39afd74772659713555069cc54736f96c2d54fd55e8#npm:2.0.3"]
           ],
@@ -3031,7 +3032,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["colorette", "npm:1.2.2"],
             ["fraction.js", "npm:4.0.13"],
             ["normalize-range", "npm:0.1.2"],
-            ["postcss", null],
+            ["postcss", "npm:8.2.8"],
             ["postcss-value-parser", "npm:4.1.0"]
           ],
           "packagePeers": [
@@ -6843,7 +6844,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/postcss", null],
             ["fancy-log", "npm:1.3.3"],
             ["plugin-error", "npm:1.0.1"],
-            ["postcss", null],
+            ["postcss", "npm:8.2.8"],
             ["postcss-load-config", "npm:2.1.2"],
             ["vinyl-sourcemaps-apply", "npm:0.2.1"]
           ],
@@ -8235,6 +8236,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["imagemin-pngquant", "npm:9.0.2"],
             ["luxon", "npm:1.26.0"],
             ["npm-run-all", "npm:4.1.5"],
+            ["postcss", "npm:8.2.8"],
             ["postcss-import", "virtual:fc7cd3aa02fcda2d686d66feeff64d746ac49c17bc259496e0bcceab2cacded000acc4aaee8a9dc97499d39afd74772659713555069cc54736f96c2d54fd55e8#npm:14.0.0"],
             ["tailwindcss", "virtual:fc7cd3aa02fcda2d686d66feeff64d746ac49c17bc259496e0bcceab2cacded000acc4aaee8a9dc97499d39afd74772659713555069cc54736f96c2d54fd55e8#npm:2.0.3"]
           ],
@@ -10518,7 +10520,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["postcss-import", "virtual:fc7cd3aa02fcda2d686d66feeff64d746ac49c17bc259496e0bcceab2cacded000acc4aaee8a9dc97499d39afd74772659713555069cc54736f96c2d54fd55e8#npm:14.0.0"],
             ["@types/postcss", null],
-            ["postcss", null],
+            ["postcss", "npm:8.2.8"],
             ["postcss-value-parser", "npm:4.1.0"],
             ["read-cache", "npm:1.0.0"],
             ["resolve", "patch:resolve@npm%3A1.17.0#builtin<compat/resolve>::version=1.17.0&hash=3388aa"]
@@ -10645,7 +10647,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["postcss-nested", "virtual:46b1833970473f29d1afeeaece87c59a6c1c2153c475ef50b6663707f1fbdf17aaa5bb263d2a27bf3d8a903017d7a34cf320287ef818b6a88eff22bc796f1bb4#npm:5.0.5"],
             ["@types/postcss", null],
-            ["postcss", null],
+            ["postcss", "npm:8.2.8"],
             ["postcss-selector-parser", "npm:6.0.4"]
           ],
           "packagePeers": [
@@ -12880,7 +12882,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["modern-normalize", "npm:1.0.0"],
             ["node-emoji", "npm:1.10.0"],
             ["object-hash", "npm:2.1.1"],
-            ["postcss", null],
+            ["postcss", "npm:8.2.8"],
             ["postcss-functions", "npm:3.0.0"],
             ["postcss-js", "npm:3.0.3"],
             ["postcss-nested", "virtual:46b1833970473f29d1afeeaece87c59a6c1c2153c475ef50b6663707f1fbdf17aaa5bb263d2a27bf3d8a903017d7a34cf320287ef818b6a88eff22bc796f1bb4#npm:5.0.5"],

@@ -29,8 +29,8 @@ import del from 'del';
 // Input paths
 
 const paths = {
-  src: './src/',
-  dist: './dist/',
+  src: './src/assets/',
+  dist: './_site/assets/',
   html: '**/*.html',
   twig: '**/*.twig',
   css: 'css/**/[!_]*.css',
@@ -193,6 +193,13 @@ function startServer() {
 };
 
 
+// Watch files
+
+function watchFiles() {
+  watch(paths.src + paths.css, compileCSS);
+}
+
+
 
 
 
@@ -218,6 +225,15 @@ export const compile = series(
 export const serve = series(
   compile,
   startServer
+);
+
+
+// Just watch files
+
+export const watcher = series(
+  clean,
+  compileCSS,
+  watchFiles
 );
 
 
