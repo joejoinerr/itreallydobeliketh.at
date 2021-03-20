@@ -33,6 +33,6 @@
     "build": "npx @11ty/eleventy",
     "serve:eleventy": "npx @11ty/eleventy --serve",
     "serve:gulp": "gulp watcher",
-    "serve": "npm-run-all --parallel serve:*"
+    "serve": "run-p serve:gulp serve:eleventy"
   }
 }

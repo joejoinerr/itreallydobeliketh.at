@@ -196,7 +196,7 @@ function startServer() {
 // Watch files
 
 function watchFiles() {
-  watch(paths.src + paths.css, compileCSS);
+  watch(paths.src + '**/*.css', compileCSS);
 }
 
 
