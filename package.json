@@ -9,6 +9,7 @@
     "@babel/core": "^7.13.10",
     "@babel/preset-env": "^7.13.10",
     "@babel/register": "^7.13.8",
+    "@tailwindcss/typography": "^0.4.0",
     "autoprefixer": "^10.2.5",
     "browser-sync": "^2.26.14",
     "cssnano": "^4.1.10",
@@ -30,7 +31,9 @@
   },
   "license": "MIT",
   "scripts": {
-    "build": "npx @11ty/eleventy",
+    "build:eleventy": "npx @11ty/eleventy",
+    "build:gulp": "gulp dist",
+    "build": "ELEVENTY_ENV=production NODE_ENV=production run-p build:gulp build:eleventy",
     "serve:eleventy": "npx @11ty/eleventy --serve",
     "serve:gulp": "gulp watcher",
     "serve": "ELEVENTY_ENV=development run-p serve:gulp serve:eleventy"

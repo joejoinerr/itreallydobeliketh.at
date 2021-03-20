@@ -42,6 +42,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/core", "npm:7.13.10"],
             ["@babel/preset-env", "virtual:fc7cd3aa02fcda2d686d66feeff64d746ac49c17bc259496e0bcceab2cacded000acc4aaee8a9dc97499d39afd74772659713555069cc54736f96c2d54fd55e8#npm:7.13.10"],
             ["@babel/register", "virtual:fc7cd3aa02fcda2d686d66feeff64d746ac49c17bc259496e0bcceab2cacded000acc4aaee8a9dc97499d39afd74772659713555069cc54736f96c2d54fd55e8#npm:7.13.8"],
+            ["@tailwindcss/typography", "virtual:fc7cd3aa02fcda2d686d66feeff64d746ac49c17bc259496e0bcceab2cacded000acc4aaee8a9dc97499d39afd74772659713555069cc54736f96c2d54fd55e8#npm:0.4.0"],
             ["autoprefixer", "virtual:fc7cd3aa02fcda2d686d66feeff64d746ac49c17bc259496e0bcceab2cacded000acc4aaee8a9dc97499d39afd74772659713555069cc54736f96c2d54fd55e8#npm:10.2.5"],
             ["browser-sync", "npm:2.26.14"],
             ["cssnano", "npm:4.1.10"],
@@ -2165,6 +2166,32 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@sindresorhus-is-npm-0.7.0-306ce07075-643ca18f80.zip/node_modules/@sindresorhus/is/",
           "packageDependencies": [
             ["@sindresorhus/is", "npm:0.7.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@tailwindcss/typography", [
+        ["npm:0.4.0", {
+          "packageLocation": "./.yarn/cache/@tailwindcss-typography-npm-0.4.0-7c2d97e988-1d5748dbbc.zip/node_modules/@tailwindcss/typography/",
+          "packageDependencies": [
+            ["@tailwindcss/typography", "npm:0.4.0"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:fc7cd3aa02fcda2d686d66feeff64d746ac49c17bc259496e0bcceab2cacded000acc4aaee8a9dc97499d39afd74772659713555069cc54736f96c2d54fd55e8#npm:0.4.0", {
+          "packageLocation": "./.yarn/$$virtual/@tailwindcss-typography-virtual-dc2eb29347/0/cache/@tailwindcss-typography-npm-0.4.0-7c2d97e988-1d5748dbbc.zip/node_modules/@tailwindcss/typography/",
+          "packageDependencies": [
+            ["@tailwindcss/typography", "virtual:fc7cd3aa02fcda2d686d66feeff64d746ac49c17bc259496e0bcceab2cacded000acc4aaee8a9dc97499d39afd74772659713555069cc54736f96c2d54fd55e8#npm:0.4.0"],
+            ["@types/tailwindcss", null],
+            ["lodash.castarray", "npm:4.4.0"],
+            ["lodash.isplainobject", "npm:4.0.6"],
+            ["lodash.merge", "npm:4.6.2"],
+            ["lodash.uniq", "npm:4.5.0"],
+            ["tailwindcss", "virtual:fc7cd3aa02fcda2d686d66feeff64d746ac49c17bc259496e0bcceab2cacded000acc4aaee8a9dc97499d39afd74772659713555069cc54736f96c2d54fd55e8#npm:2.0.4"]
+          ],
+          "packagePeers": [
+            "@types/tailwindcss",
+            "tailwindcss"
           ],
           "linkType": "HARD",
         }]
@@ -8050,6 +8077,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/core", "npm:7.13.10"],
             ["@babel/preset-env", "virtual:fc7cd3aa02fcda2d686d66feeff64d746ac49c17bc259496e0bcceab2cacded000acc4aaee8a9dc97499d39afd74772659713555069cc54736f96c2d54fd55e8#npm:7.13.10"],
             ["@babel/register", "virtual:fc7cd3aa02fcda2d686d66feeff64d746ac49c17bc259496e0bcceab2cacded000acc4aaee8a9dc97499d39afd74772659713555069cc54736f96c2d54fd55e8#npm:7.13.8"],
+            ["@tailwindcss/typography", "virtual:fc7cd3aa02fcda2d686d66feeff64d746ac49c17bc259496e0bcceab2cacded000acc4aaee8a9dc97499d39afd74772659713555069cc54736f96c2d54fd55e8#npm:0.4.0"],
             ["autoprefixer", "virtual:fc7cd3aa02fcda2d686d66feeff64d746ac49c17bc259496e0bcceab2cacded000acc4aaee8a9dc97499d39afd74772659713555069cc54736f96c2d54fd55e8#npm:10.2.5"],
             ["browser-sync", "npm:2.26.14"],
             ["cssnano", "npm:4.1.10"],
@@ -8508,6 +8536,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["lodash.castarray", [
+        ["npm:4.4.0", {
+          "packageLocation": "./.yarn/cache/lodash.castarray-npm-4.4.0-f3706198e9-45fb788a2e.zip/node_modules/lodash.castarray/",
+          "packageDependencies": [
+            ["lodash.castarray", "npm:4.4.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["lodash.debounce", [
         ["npm:4.0.8", {
           "packageLocation": "./.yarn/cache/lodash.debounce-npm-4.0.8-f1d6e09799-b6042bd8c0.zip/node_modules/lodash.debounce/",
@@ -8535,11 +8572,29 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["lodash.isplainobject", [
+        ["npm:4.0.6", {
+          "packageLocation": "./.yarn/cache/lodash.isplainobject-npm-4.0.6-d73937742f-72a114b610.zip/node_modules/lodash.isplainobject/",
+          "packageDependencies": [
+            ["lodash.isplainobject", "npm:4.0.6"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["lodash.memoize", [
         ["npm:4.1.2", {
           "packageLocation": "./.yarn/cache/lodash.memoize-npm-4.1.2-0e6250041f-080c1095b7.zip/node_modules/lodash.memoize/",
           "packageDependencies": [
             ["lodash.memoize", "npm:4.1.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["lodash.merge", [
+        ["npm:4.6.2", {
+          "packageLocation": "./.yarn/cache/lodash.merge-npm-4.6.2-77cb4416bf-4e2bb42a87.zip/node_modules/lodash.merge/",
+          "packageDependencies": [
+            ["lodash.merge", "npm:4.6.2"]
           ],
           "linkType": "HARD",
         }]

@@ -2,10 +2,13 @@
 <html lang="en" prefix="og: https://ogp.me/ns#">
 <head>
   {%- block head %}
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ site.root + '/assets/css/main.css' }}">
 
   <title>{{ title }}</title>
@@ -15,7 +18,7 @@
   {% include 'metadata.njk' %}
   {% endblock -%}
 </head>
-<body>
+<body class="font-main">
   {% block header %}
     <header>
       <a href="{{ site.root + '/' }}">It Really Do Be Like That</a>
