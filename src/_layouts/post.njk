@@ -1,0 +1,13 @@
+---
+layout: base.njk
+---
+
+{% block body %}
+  <article>
+    <header>
+      <h1>{{ title }}</h1>
+    </header>
+    <time datetime="{{ date.toISOString() }}">{{ date.toISOString() | date('yyyy.LL.dd') }}</time>
+    {{ content | safe }}
+  </article>
+{% endblock %}

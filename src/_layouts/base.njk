@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+<head>
+  {%- block head %}
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="{{ site.root + '/assets/css/main.css' }}">
+
+  <title>{{ title }}</title>
+  {%- set canonical = canonical | replace(site.root, '') %}
+  {%- set canonicalHref = site.root + ( canonical or page.url ) %}
+  <link rel="canonical" href="{{ canonicalHref }}">
+  {% include 'metadata.njk' %}
+  {% endblock -%}
+</head>
+<body>
+  {% block header %}
+    <header>
+      <a href="{{ site.root + '/' }}">It Really Do Be Like That</a>
+    </header>
+  {% endblock %}
+
+  <main>
+  {%- block body %}
+    {{ content | safe }}
+  {%- endblock %}
+  </main>
+</body>
+</html>
