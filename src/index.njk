@@ -11,7 +11,7 @@ layout: base.njk
     {% from 'feed-post.njk' import feed_post %}
     {% for post in collections.posts %}
       {# Use the feed_post component to keep format consistent #}
-      {{ feed_post(post) }}
+      {{ feed_post(post.data.title, post.date, post.url) }}
     {% endfor %}
   </div>
 {% endblock %}
