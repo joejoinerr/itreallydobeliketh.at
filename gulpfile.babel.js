@@ -89,7 +89,7 @@ function minifyCSS() {
     .pipe(plugins.rev())
     .pipe(dest(paths.dist + 'css/'))
     .pipe(plugins.rev.manifest({
-      base: paths.dist,
+      base: './_site/',
       merge: true
     }))
     .pipe(dest(paths.dist + 'css/'))
@@ -243,9 +243,5 @@ export const dist = series(
   clean,
   parallel(
     series(compileCSS, minifyCSS),
-    copyRootFiles,
-    series(copyImg, compressImg),
-    copyFont
-  ),
-  rewrite
+  )
 );
