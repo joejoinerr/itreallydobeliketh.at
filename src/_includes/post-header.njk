@@ -1,0 +1,26 @@
+{% macro postHeader(params) %}
+{# Set default classes #}
+{% set wrapperClasses = 'mb-6  py-6' %}
+{% set headingClasses = 'px-4  text-3xl  font-bold' %}
+
+{# Amend classes depending on theme #}
+{% if params.theme == 'red' %}
+  {% set wrapperClasses = wrapperClasses + '  bg-red-800' %}
+  {% set headingClasses = headingClasses + '  text-red-100' %}
+{% elif params.theme == 'blue' %}
+  {% set wrapperClasses = wrapperClasses + '  bg-blue-800' %}
+  {% set headingClasses = headingClasses + '  text-blue-100' %}
+{% elif params.theme == 'yellow' %}
+  {% set wrapperClasses = wrapperClasses + '  bg-yellow-500' %}
+  {% set headingClasses = headingClasses + '  text-yellow-900' %}
+{% else %}
+  {% set headingClasses = headingClasses + '  text-dark-900' %}
+{% endif %}
+
+{# Render component #}
+<header class="{{ wrapperClasses }}">
+  <div class="max-w-prose  mx-auto">
+    <h1 class="{{ headingClasses }}">{{ params.title }}</h1>
+  </div>
+</header>
+{% endmacro %}

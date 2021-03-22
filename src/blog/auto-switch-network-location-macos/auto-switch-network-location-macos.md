@@ -12,7 +12,7 @@ To simplify setup for this on my MacBook, I created an additional [network locat
 
 You can then switch locations from the Apple menu:
 
-![Screenshot of the Apple menu on a MacBook Pro, showing the items available under the 'Locations' menu.](/img/2020-08-07-locations-apple-menu.png)
+![Screenshot of the Apple menu on a MacBook Pro, showing the items available under the 'Locations' menu.](2020-08-07-locations-apple-menu.png)
 
 
 ## Going further
@@ -29,7 +29,7 @@ While this is very useful, it's still a manual process to open the Terminal, typ
 
 Since you can use shell scripts as workflows in one of my favourite Mac apps, [Alfred](https://www.alfredapp.com/), I looked around and found [alfred-network-location by @deanishe](https://github.com/deanishe/alfred-network-location) that would let me switch locations using a more accessible interface:
 
-![Screenshot of Alfred for macOS running the alfred-network-location workflow.](/img/2020-08-07-alfred-network-location.png)
+![Screenshot of Alfred for macOS running the alfred-network-location workflow.](2020-08-07-alfred-network-location.png)
 
 Again, this is great, but still relies on manually changing the location.
 
@@ -38,7 +38,7 @@ Again, this is great, but still relies on manually changing the location.
 
 Keyboard Maestro also allows running shell scripts, but actually has the location-switching capability built in. Since I only ever wanted this location to be set when I'm using my home network, I can use the network SSID as the trigger for changing location:
 
-![Screenshot of Keyboard Maestro showing a profile to switch between network locations](/img/2020-08-07-km-location-switcher.png)
+![Screenshot of Keyboard Maestro showing a profile to switch between network locations](2020-08-07-km-location-switcher.png)
 
 This should be a fairly clear script to understand from the screenshot alone, but for clarity: if I'm connected to my home network, use the 'Home' location (with static IP and custom DNS set up), otherwise use the 'Automatic' location (IP set by DHCP and default DNS).
 

@@ -10,7 +10,7 @@ A lot of instant ramen can be lacking in flavour and nutrition. Even if not, the
 
 My favourite instant ramen is [Nong Shim Shin Ramyun](https://singkeefoods.co.uk/gb/noodles/85-nongshim-shin-ramyun-noodle-soup-120g-8801043150620.html), which is vegan. If you're in the west, please support your local Asian supermarket where possible!
 
-![Nong Shim Shin Ramyun spicy noodle soup in packaging.](/img/2021-03-13-nong-shim-shin-ramyun-noodle-soup.jpeg)
+![Nong Shim Shin Ramyun spicy noodle soup in packaging.](2021-03-13-nong-shim-shin-ramyun-noodle-soup.jpeg)
 
 ## The upgrades
 
