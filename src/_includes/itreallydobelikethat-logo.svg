@@ -1,0 +1,30 @@
+<svg class="logo" width="100" viewBox="0,0 120,120">
+  <defs>
+    <path id="pathMap" d="M 20,60 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0" transform="rotate(30 60 60)" />
+  </defs>
+  <text font-weight="bold" font-size="16">
+    <textPath href="#pathMap">
+      IT REALLY DO BE LIKE THAT
+    </textPath>
+  </text>
+<!--   <animateTransform
+    href="#pathMap"
+    attributeName="transform"
+    type="rotate"
+    from="390 60 60"
+    to="30 60 60"
+    calcMode="spline"
+    keySplines="0 0.5 0.5 1"
+    dur="2s"
+  /> -->
+  <animateTransform
+    href="#pathMap"
+    attributeName="transform"
+    type="rotate"
+    from="390 60 60"
+    to="30 60 60"
+    dur="35s"
+    repeatCount="indefinite"
+  />
+<!--     begin="1.9s" -->
+</svg>
