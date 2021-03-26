@@ -1,4 +1,4 @@
-const { DateTime } = require('luxon')
+const speedDate = require('speed-date')
 
 module.exports = function(eleventyConfig) {
   // Allow top-level and page-level data to be combined
@@ -10,7 +10,7 @@ module.exports = function(eleventyConfig) {
 
   // Create a date filter so that I can use format strings
   eleventyConfig.addFilter('date', function(date, formatString) {
-    return DateTime.fromISO(date).toFormat(formatString);
+    return speedDate.cached(formatString, new Date(date));
   });
 
   return {
