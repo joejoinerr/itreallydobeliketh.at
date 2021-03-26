@@ -6551,6 +6551,7 @@ fsevents@~2.3.1:
     npm-run-all: ^4.1.5
     postcss: ^8.2.8
     postcss-import: ^14.0.0
+    speed-date: ^1.0.0
     tailwindcss: ^2.0.3
   languageName: unknown
   linkType: soft
@@ -10270,6 +10271,13 @@ fsevents@~2.3.1:
   version: 3.0.7
   resolution: "spdx-license-ids@npm:3.0.7"
   checksum: 21e38ec5dd970643f78d37700b6c6ebd42d68c0e4618db914a56cabd2fe4cc1608404ce6abc7535d5165c6555560e821553d06edf6af6ae439617883cf932c0e
+  languageName: node
+  linkType: hard
+
+"speed-date@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "speed-date@npm:1.0.0"
+  checksum: c18a8833fb776191d7ac6c9ad1793dbe59642c1c80de6169f6100fd9aeebeac75ea1ca82602d1176bb26b77854b59ecae2d1eceea1402100c5606f14c228f709
   languageName: node
   linkType: hard
 

@@ -60,6 +60,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["npm-run-all", "npm:4.1.5"],
             ["postcss", "npm:8.2.8"],
             ["postcss-import", "virtual:fc7cd3aa02fcda2d686d66feeff64d746ac49c17bc259496e0bcceab2cacded000acc4aaee8a9dc97499d39afd74772659713555069cc54736f96c2d54fd55e8#npm:14.0.0"],
+            ["speed-date", "npm:1.0.0"],
             ["tailwindcss", "virtual:fc7cd3aa02fcda2d686d66feeff64d746ac49c17bc259496e0bcceab2cacded000acc4aaee8a9dc97499d39afd74772659713555069cc54736f96c2d54fd55e8#npm:2.0.4"]
           ],
           "linkType": "SOFT",
@@ -8095,6 +8096,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["npm-run-all", "npm:4.1.5"],
             ["postcss", "npm:8.2.8"],
             ["postcss-import", "virtual:fc7cd3aa02fcda2d686d66feeff64d746ac49c17bc259496e0bcceab2cacded000acc4aaee8a9dc97499d39afd74772659713555069cc54736f96c2d54fd55e8#npm:14.0.0"],
+            ["speed-date", "npm:1.0.0"],
             ["tailwindcss", "virtual:fc7cd3aa02fcda2d686d66feeff64d746ac49c17bc259496e0bcceab2cacded000acc4aaee8a9dc97499d39afd74772659713555069cc54736f96c2d54fd55e8#npm:2.0.4"]
           ],
           "linkType": "SOFT",
@@ -12211,6 +12213,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/spdx-license-ids-npm-3.0.7-f2c686cec2-21e38ec5dd.zip/node_modules/spdx-license-ids/",
           "packageDependencies": [
             ["spdx-license-ids", "npm:3.0.7"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["speed-date", [
+        ["npm:1.0.0", {
+          "packageLocation": "./.yarn/cache/speed-date-npm-1.0.0-9a79126dde-c18a8833fb.zip/node_modules/speed-date/",
+          "packageDependencies": [
+            ["speed-date", "npm:1.0.0"]
           ],
           "linkType": "HARD",
         }]
