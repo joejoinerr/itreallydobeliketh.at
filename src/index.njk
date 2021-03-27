@@ -13,7 +13,7 @@ layout: base.njk
       {% for post in collections.posts %}
         {# Use the feed_post component to keep format consistent #}
         {% if loop.last %}
-          {% set feedPostClasses = undefined %}
+          {% set feedPostClasses = null %}
         {% else %}
           {% set feedPostClasses = 'mb-6' %}
         {% endif %}
