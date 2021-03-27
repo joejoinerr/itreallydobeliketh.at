@@ -1,6 +1,6 @@
 {% macro feed_post(title, date, url) %}
   <article>
-    <time datetime="{{ date.toISOString() }}">{{ date.toISOString() | date('yyyy.LL.dd') }}</time>
+    <time datetime="{{ date.toISOString() }}">{{ date | date('YYYY.MM.DD') }}</time>
     <a href="{{ url }}">{{ title }}</a>
   </article>
 {% endmacro %}

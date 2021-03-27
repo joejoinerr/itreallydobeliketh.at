@@ -10,7 +10,7 @@ layout: base.njk
       title: title,
       theme: theme
     }) }}
-    <time class="max-w-prose  mx-auto  block  mb-5  px-4  text-dark-500" datetime="{{ date.toISOString() }}">{{ date.toISOString() | date('yyyy.LL.dd') }}</time>
+    <time class="max-w-prose  mx-auto  block  mb-5  px-4  text-dark-500" datetime="{{ date.toISOString() }}">{{ date | date('YYYY.MM.DD') }}</time>
     <div class="max-w-prose  mx-auto  prose  px-4  text-dark-900">
       {{ content | safe }}
     </div>
