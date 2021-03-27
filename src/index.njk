@@ -15,7 +15,7 @@ layout: base.njk
         {% if loop.last %}
           {% set feedPostClasses = null %}
         {% else %}
-          {% set feedPostClasses = 'mb-6' %}
+          {% set feedPostClasses = 'mb-10' %}
         {% endif %}
         {{ feed_post({
           title: post.data.title,
