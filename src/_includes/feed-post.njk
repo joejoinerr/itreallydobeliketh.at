@@ -1,6 +1,8 @@
 {% macro feed_post(props) %}
   <article {% if props.classes %}class="{{ props.classes }}"{% endif %}>
-    <time class="block" datetime="{{ props.date.toISOString() }}">{{ props.date | date('YYYY.MM.DD') }}</time>
-    <a class="block  text-lg" href="{{ props.url }}">{{ props.title }}</a>
+    <time class="block  mb-1" datetime="{{ props.date.toISOString() }}">{{ props.date | date('YYYY.MM.DD') }}</time>
+    <div>
+      <a class="text-lg  underline  hover:text-dark-700" href="{{ props.url }}">{{ props.title }}</a>
+    </div>
   </article>
 {% endmacro %}
