@@ -1,4 +1,4 @@
-{% macro feed_post(props) %}
+{% macro feedPost(props) %}
   <article {% if props.classes %}class="{{ props.classes }}"{% endif %}>
     <time class="block  mb-1" datetime="{{ props.date.toISOString() }}">{{ props.date | date('YYYY.MM.DD') }}</time>
     <div>

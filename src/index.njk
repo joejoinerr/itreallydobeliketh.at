@@ -9,7 +9,7 @@ layout: base.njk
     </p>
 
     <div class="text-dark-900">
-      {% from 'feed-post.njk' import feed_post %}
+      {% from 'feed-post.njk' import feedPost %}
       {% for post in collections.posts %}
         {# Use the feed_post component to keep format consistent #}
         {% if loop.last %}
@@ -17,7 +17,7 @@ layout: base.njk
         {% else %}
           {% set feedPostClasses = 'mb-10' %}
         {% endif %}
-        {{ feed_post({
+        {{ feedPost({
           title: post.data.title,
           date: post.date,
           url: post.url,
