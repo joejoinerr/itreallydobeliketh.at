@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ site.root + '/assets/css/main.css' }}">
 
-  <title>{{ title }}</title>
+  <title>{{ title }}{% if page.url != '/' %} | {{ site.name }}{% endif %}</title>
   {%- set canonical = canonical | replace(site.root, '') %}
   {%- set canonicalHref = site.root + ( canonical or page.url ) %}
   <link rel="canonical" href="{{ canonicalHref }}">
