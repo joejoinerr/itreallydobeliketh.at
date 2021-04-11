@@ -1,7 +1,7 @@
 {% macro postHeader(params) %}
 {# Set default classes #}
-{% set wrapperClasses = 'mb-6  py-6' %}
-{% set headingClasses = 'px-4  text-3xl  font-bold' %}
+{% set wrapperClasses = 'mb-6  lg:mb-12  pt-8  sm:pt-10  lg:pt-12  pb-6  lg:pb-8' %}
+{% set headingClasses = 'px-4  text-3xl  sm:text-4xl  lg:leading-tight  font-bold' %}
 
 {# Amend classes depending on theme #}
 {% if params.theme == 'red' %}
@@ -14,6 +14,7 @@
   {% set wrapperClasses = wrapperClasses + '  bg-yellow-500' %}
   {% set headingClasses = headingClasses + '  text-yellow-900' %}
 {% else %}
+  {% set wrapperClasses = wrapperClasses + '  bg-dark-100' %}
   {% set headingClasses = headingClasses + '  text-dark-900' %}
 {% endif %}
 

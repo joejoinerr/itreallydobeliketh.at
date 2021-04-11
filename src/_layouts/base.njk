@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" prefix="og: https://ogp.me/ns#">
+<html lang="en" prefix="og: https://ogp.me/ns#" class="font-main  lg:text-lg">
 <head>
   {%- block head %}
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -18,11 +18,34 @@
   {% include 'metadata.njk' %}
   {% endblock -%}
 </head>
-<body class="font-main">
+<body>
   {% block header %}
-    <header class="max-w-prose  pt-6  pl-2  pr-4  mx-auto">
-      <a class="inline-block" href="{{ site.root + '/' }}">{% include 'itreallydobelikethat-logo.svg' %}</a>
+
+    {# Amend classes depending on theme #}
+    {% set wrapperClasses = '' %}
+    {% if layout == 'post.njk' and theme == 'red' %}
+      {% set wrapperClasses = wrapperClasses + '  bg-red-800' %}
+      {% set textColor = 'text-red-100' %}
+    {% elif layout == 'post.njk' and theme == 'blue' %}
+      {% set wrapperClasses = wrapperClasses + '  bg-blue-800' %}
+      {% set textColor = 'text-blue-100' %}
+    {% elif layout == 'post.njk' and theme == 'yellow' %}
+      {% set wrapperClasses = wrapperClasses + '  bg-yellow-500' %}
+      {% set textColor = 'text-yellow-900' %}
+    {% elif layout == 'post.njk' %}
+      {% set wrapperClasses = wrapperClasses + '  bg-dark-100' %}
+      {% set textColor = 'text-dark-900' %}
+    {% endif %}
+
+    <header class="{{ wrapperClasses }}">
+      <div class="max-w-prose  mx-auto  pt-6  pl-2  pr-4">
+        <a class="inline-block" href="{{ site.root + '/' }}">
+          {% from 'itreallydobelikethat-logo.njk' import siteLogo %}
+          {{ siteLogo({ textColorClass: textColor }) }}
+        </a>
+      </div>
     </header>
+
   {% endblock %}
 
   <main>

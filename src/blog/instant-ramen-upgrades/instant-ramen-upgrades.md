@@ -4,6 +4,7 @@ date: 2021-03-13
 description: Upgrade a dull ramen with some veggies, condiments or other additions. Here are my picks!
 tags:
     - recipe
+theme: red
 ---
 
 A lot of instant ramen can be lacking in flavour and nutrition. Even if not, there's always some room for improvement. Here are some ingredients that can seriously upgrade your instant ramen experience. 

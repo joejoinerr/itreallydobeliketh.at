@@ -4,6 +4,7 @@ date: 2020-08-07
 description: Easily switch macOS locations by watching the network SSID with Keyboard Maestro, rather than using the Apple menu.
 tags: 
     - automation
+theme: blue
 ---
 
 I have a [Pi-hole](https://pi-hole.net/) running on my home network, against static IPs rather than over DHCP, so that I can recognise devices from the logs. This means having the DNS set up on each device as this isn't provided automatically by the DHCP configuration.
