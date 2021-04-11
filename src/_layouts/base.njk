@@ -23,16 +23,17 @@
 
     {# Amend classes depending on theme #}
     {% set wrapperClasses = '' %}
-    {% if theme == 'red' %}
+    {% if layout == 'post.njk' and theme == 'red' %}
       {% set wrapperClasses = wrapperClasses + '  bg-red-800' %}
       {% set textColor = 'text-red-100' %}
-    {% elif theme == 'blue' %}
+    {% elif layout == 'post.njk' and theme == 'blue' %}
       {% set wrapperClasses = wrapperClasses + '  bg-blue-800' %}
       {% set textColor = 'text-blue-100' %}
-    {% elif theme == 'yellow' %}
+    {% elif layout == 'post.njk' and theme == 'yellow' %}
       {% set wrapperClasses = wrapperClasses + '  bg-yellow-500' %}
       {% set textColor = 'text-yellow-900' %}
-    {% else %}
+    {% elif layout == 'post.njk' %}
+      {% set wrapperClasses = wrapperClasses + '  bg-dark-100' %}
       {% set textColor = 'text-dark-900' %}
     {% endif %}
 
