@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" prefix="og: https://ogp.me/ns#">
+<html lang="en" prefix="og: https://ogp.me/ns#" class="font-main  lg:text-lg">
 <head>
   {%- block head %}
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -18,11 +18,26 @@
   {% include 'metadata.njk' %}
   {% endblock -%}
 </head>
-<body class="font-main">
+<body>
   {% block header %}
-    <header class="max-w-prose  pt-6  pl-2  pr-4  mx-auto">
-      <a class="inline-block" href="{{ site.root + '/' }}">{% include 'itreallydobelikethat-logo.svg' %}</a>
+
+    {% set wrapperClasses = '' %}
+
+    {# Amend classes depending on theme #}
+    {% if theme == 'red' %}
+      {% set wrapperClasses = wrapperClasses + '  bg-red-800' %}
+    {% elif theme == 'blue' %}
+      {% set wrapperClasses = wrapperClasses + '  bg-blue-800' %}
+    {% elif theme == 'yellow' %}
+      {% set wrapperClasses = wrapperClasses + '  bg-yellow-500' %}
+    {% endif %}
+
+    <header class="{{ wrapperClasses }}">
+      <div class="max-w-prose  mx-auto  pt-6  pl-2  pr-4">
+        <a class="inline-block" href="{{ site.root + '/' }}">{% include 'itreallydobelikethat-logo.svg' %}</a>
+      </div>
     </header>
+
   {% endblock %}
 
   <main>
