@@ -21,20 +21,27 @@
 <body>
   {% block header %}
 
-    {% set wrapperClasses = '' %}
-
     {# Amend classes depending on theme #}
+    {% set wrapperClasses = '' %}
     {% if theme == 'red' %}
       {% set wrapperClasses = wrapperClasses + '  bg-red-800' %}
+      {% set textColor = 'text-red-100' %}
     {% elif theme == 'blue' %}
       {% set wrapperClasses = wrapperClasses + '  bg-blue-800' %}
+      {% set textColor = 'text-blue-100' %}
     {% elif theme == 'yellow' %}
       {% set wrapperClasses = wrapperClasses + '  bg-yellow-500' %}
+      {% set textColor = 'text-yellow-900' %}
+    {% else %}
+      {% set textColor = 'text-dark-900' %}
     {% endif %}
 
     <header class="{{ wrapperClasses }}">
       <div class="max-w-prose  mx-auto  pt-6  pl-2  pr-4">
-        <a class="inline-block" href="{{ site.root + '/' }}">{% include 'itreallydobelikethat-logo.svg' %}</a>
+        <a class="inline-block" href="{{ site.root + '/' }}">
+          {% from 'itreallydobelikethat-logo.njk' import siteLogo %}
+          {{ siteLogo({ textColorClass: textColor }) }}
+        </a>
       </div>
     </header>
 
