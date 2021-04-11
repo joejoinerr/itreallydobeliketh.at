@@ -24,6 +24,7 @@ import cssnano from 'cssnano';
 import tailwindcss from 'tailwindcss';
 import atImport from 'postcss-import';
 import del from 'del';
+import { readFileSync } from 'fs';
 
 
 // Input paths
@@ -165,14 +166,14 @@ function clean(cb) {
 // Update revved filenames
 
 function rewrite() {
-  const manifest = src(paths.dist + 'rev-manifest.json')
+  const manifest = readFileSync(paths.dist + 'rev-manifest.json')
 
   return src([
-      paths.dist + paths.html,
-      paths.dist + paths.twig
+      './_site/' + paths.html,
+      './_site/' + paths.twig
     ])
     .pipe(plugins.revRewrite({ manifest }))
-    .pipe(dest(paths.dist))
+    .pipe(dest('./_site/'))
 };
 
 
@@ -241,7 +242,7 @@ export const watcher = series(
 
 export const dist = series(
   clean,
-  parallel(
-    series(compileCSS, minifyCSS),
-  )
+  compileCSS,
+  minifyCSS,
+  rewrite
 );
