@@ -6,7 +6,7 @@ module.exports = function(eleventyConfig) {
 
   // Copy files not usually handled
   eleventyConfig.addPassthroughCopy('src/robots.txt')
-  eleventyConfig.addPassthroughCopy('src/blog/**/*.(jpg|jpeg|webp|png|svg|gif|mp4)')
+  eleventyConfig.addPassthroughCopy('src/**/*.(jpg|jpeg|webp|png|svg|gif|mp4)')
 
   // Create a date filter so that I can use format strings
   eleventyConfig.addFilter('date', function(date, formatString) {
