@@ -18,6 +18,7 @@ My favourite instant ramen is [Nong Shim Shin Ramyun](https://singkeefoods.co.uk
 * Edamame beans
 * Dried seaweed (use either cut up [nori sheets](https://singkeefoods.co.uk/gb/condiments/2157-nagai-s-roasted-seaweed-sushinori-28g.html) or [seaweed flakes](https://singkeefoods.co.uk/gb/home/2257-wel-pac-fueru-wakame-567-g.html) — I prefer the latter!)
 * [Enoki mushrooms](https://singkeefoods.co.uk/gb/fresh-asian/467-herman-kuijper-enoki-mushroom-100g-8717624002311.html)
+* Shiitake mushrooms
 * Spring onion (scallions)
 * Chopped garlic
 * Chopped ginger
