@@ -1,0 +1,9 @@
+[[redirects]]
+from = "https://itreallydobelikethat.netlify.app/*"
+to = "https://itreallydobeliketh.at/:splat"
+force = true
+
+[[redirects]]
+from = "http://itreallydobelikethat.netlify.app/*"
+to = "https://itreallydobeliketh.at/:splat"
+force = true
