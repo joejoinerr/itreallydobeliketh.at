@@ -12,16 +12,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@11ty/eleventy-upgrade-help@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "@11ty/eleventy-upgrade-help@npm:1.0.1"
-  dependencies:
-    chalk: ^4.1.1
-    semver: ^7.3.5
-  checksum: 310fcb9f2730e72a42d0d0926e3041153ec983306b8f56ba07cb63e8386926d87c9b5b3238483ad4fbbf131fd1985dc18e62ab1c011c3d7471e780899d0856b8
-  languageName: node
-  linkType: hard
-
 "@11ty/eleventy-utils@npm:^1.0.1":
   version: 1.0.1
   resolution: "@11ty/eleventy-utils@npm:1.0.1"
@@ -2769,7 +2759,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chalk@npm:^4.0.2, chalk@npm:^4.1.1":
+"chalk@npm:^4.0.2":
   version: 4.1.2
   resolution: "chalk@npm:4.1.2"
   dependencies:
@@ -6717,7 +6707,6 @@ fsevents@^1.2.7:
   resolution: "itreallydobelikethat@workspace:."
   dependencies:
     "@11ty/eleventy": ^1.0.1
-    "@11ty/eleventy-upgrade-help": ^1.0.1
     "@babel/cli": ^7.13.10
     "@babel/core": ^7.13.10
     "@babel/preset-env": ^7.13.10
@@ -10144,7 +10133,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"semver@npm:^7.3.5, semver@npm:^7.3.7":
+"semver@npm:^7.3.7":
   version: 7.3.7
   resolution: "semver@npm:7.3.7"
   dependencies:

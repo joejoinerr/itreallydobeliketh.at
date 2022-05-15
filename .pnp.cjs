@@ -34,7 +34,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["@11ty/eleventy", "npm:1.0.1"],\
-            ["@11ty/eleventy-upgrade-help", "npm:1.0.1"],\
             ["@babel/cli", "virtual:fc7cd3aa02fcda2d686d66feeff64d746ac49c17bc259496e0bcceab2cacded000acc4aaee8a9dc97499d39afd74772659713555069cc54736f96c2d54fd55e8#npm:7.13.10"],\
             ["@babel/core", "npm:7.13.10"],\
             ["@babel/preset-env", "virtual:fc7cd3aa02fcda2d686d66feeff64d746ac49c17bc259496e0bcceab2cacded000acc4aaee8a9dc97499d39afd74772659713555069cc54736f96c2d54fd55e8#npm:7.13.10"],\
@@ -111,17 +110,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["recursive-copy", "npm:2.0.14"],\
             ["semver", "npm:7.3.7"],\
             ["slugify", "npm:1.6.5"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
-      ["@11ty/eleventy-upgrade-help", [\
-        ["npm:1.0.1", {\
-          "packageLocation": "./.yarn/cache/@11ty-eleventy-upgrade-help-npm-1.0.1-1ae8d9b3cd-310fcb9f27.zip/node_modules/@11ty/eleventy-upgrade-help/",\
-          "packageDependencies": [\
-            ["@11ty/eleventy-upgrade-help", "npm:1.0.1"],\
-            ["chalk", "npm:4.1.2"],\
-            ["semver", "npm:7.3.7"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -8279,7 +8267,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["itreallydobelikethat", "workspace:."],\
             ["@11ty/eleventy", "npm:1.0.1"],\
-            ["@11ty/eleventy-upgrade-help", "npm:1.0.1"],\
             ["@babel/cli", "virtual:fc7cd3aa02fcda2d686d66feeff64d746ac49c17bc259496e0bcceab2cacded000acc4aaee8a9dc97499d39afd74772659713555069cc54736f96c2d54fd55e8#npm:7.13.10"],\
             ["@babel/core", "npm:7.13.10"],\
             ["@babel/preset-env", "virtual:fc7cd3aa02fcda2d686d66feeff64d746ac49c17bc259496e0bcceab2cacded000acc4aaee8a9dc97499d39afd74772659713555069cc54736f96c2d54fd55e8#npm:7.13.10"],\
