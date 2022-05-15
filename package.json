@@ -33,10 +33,10 @@
   },
   "license": "MIT",
   "scripts": {
-    "build:eleventy": "npx @11ty/eleventy",
+    "build:eleventy": "yarn run -B eleventy",
     "build:gulp": "gulp dist",
     "build": "ELEVENTY_ENV=production NODE_ENV=production run-p build:gulp build:eleventy",
-    "serve:eleventy": "npx @11ty/eleventy --serve",
+    "serve:eleventy": "yarn run -B eleventy --serve",
     "serve:gulp": "gulp watcher",
     "serve": "ELEVENTY_ENV=development run-p serve:gulp serve:eleventy"
   }
