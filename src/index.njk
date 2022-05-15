@@ -11,7 +11,7 @@ title: It Really Do Be Like That
 
     <div class="text-dark-900">
       {% from 'feed-post.njk' import feedPost %}
-      {% for post in collections.posts %}
+      {%- for post in collections.posts | reverse -%}
         {# Use the feed_post component to keep format consistent #}
         {% if loop.last %}
           {% set feedPostClasses = null %}
@@ -24,7 +24,7 @@ title: It Really Do Be Like That
           url: post.url,
           classes: feedPostClasses
         }) }}
-      {% endfor %}
+      {%- endfor -%}
     </div>
   </div>
 {% endblock %}
