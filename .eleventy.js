@@ -1,9 +1,6 @@
 const speedDate = require('speed-date')
-const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
 
 module.exports = function(eleventyConfig) {
-  eleventyConfig.addPlugin(UpgradeHelper);
-
   // Allow top-level and page-level data to be combined
   eleventyConfig.setDataDeepMerge(true);
 
