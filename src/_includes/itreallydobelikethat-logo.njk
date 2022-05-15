@@ -4,12 +4,7 @@
   <defs>
     <path id="pathMap" d="M 20,60 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0" transform="rotate(30 60 60)" />
   </defs>
-  {% if params.textColorClass %}
-    {% set textColor = params.textColorClass %}
-  {% else %}
-    {% set textColor = 'text-dark-900' %}
-  {% endif %}
-  <text font-weight="bold" font-size="16" class="{{ textColor }}  fill-current">
+  <text font-weight="bold" font-size="16" class="{{ params.textColorClass if params.textColorClass else 'text-dark-900' }}  fill-current">
     <textPath href="#pathMap">
       IT REALLY DO BE LIKE THAT
     </textPath>
