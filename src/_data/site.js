@@ -5,11 +5,8 @@ module.exports = function() {
     env: process.env.ELEVENTY_ENV
   }
 
-  if (data.env === 'development') {
-    data.root = 'http://localhost:8080'
-  } else {
-    data.root = 'https://itreallydobeliketh.at'
-  };
+  const isDev = data.env === 'development'
+  data.root = isDev ? 'https://localhost:8080/' : 'https://itreallydobeliketh.at/'
 
-  return data
-};
+  return data;
+}
