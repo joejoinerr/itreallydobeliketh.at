@@ -9,12 +9,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ site.root + '/assets/css/main.css' }}">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | fullurl }}">
 
   <title>{{ title }}{% if page.url != '/' %} | {{ site.name }}{% endif %}</title>
-  {%- set canonical = canonical | replace(site.root, '') %}
-  {%- set canonicalHref = site.root + ( canonical or page.url ) %}
-  <link rel="canonical" href="{{ canonicalHref }}">
+  <link rel="canonical" href="{{ canonical or page.url | fullurl }}">
   {% include 'metadata.njk' %}
   {% endblock -%}
 </head>
@@ -41,7 +39,7 @@
 
     <header class="{{ wrapperClasses }}">
       <div class="max-w-prose  mx-auto  pt-6  pl-2  pr-4">
-        <a class="inline-block" href="{{ site.root + '/' }}">
+        <a class="inline-block" href="{{ '/' | fullurl }}">
           {% from 'itreallydobelikethat-logo.njk' import siteLogo %}
           {{ siteLogo({ textColorClass: textColor }) }}
         </a>

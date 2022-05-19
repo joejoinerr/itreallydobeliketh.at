@@ -1,4 +1,5 @@
-const speedDate = require('speed-date')
+const speedDate = require('speed-date');
+const site = require('./src/_data/site')();
 
 module.exports = function(eleventyConfig) {
   // Allow top-level and page-level data to be combined
@@ -11,6 +12,11 @@ module.exports = function(eleventyConfig) {
   // Create a date filter so that I can use format strings
   eleventyConfig.addFilter('date', function(date, formatString) {
     return speedDate.cached(formatString, new Date(date));
+  });
+
+  // Create an absolute URL filter
+  eleventyConfig.addFilter('fullurl', function(url) {
+    return new URL(url, site.root).href;
   });
 
   return {
