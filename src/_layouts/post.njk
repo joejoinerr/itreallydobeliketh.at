@@ -1,10 +1,12 @@
----
-layout: base.njk
----
+{% extends './base.njk' %}
 
-{% from 'post-header.njk' import postHeader %}
+{% block css %}
+  {{ super() }}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-gruvbox-dark.min.css" integrity="sha512-XZoe1WroNfbcndQJexn+pbMEytiaSYRHDuKjew+Nn0xYSTmB4sfoZnBdqYCrXq2IwAcPZS/sXE5ju/JbppYOsA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+{% endblock %}
 
 {% block body %}
+  {% from 'post-header.njk' import postHeader %}
   <article class="mb-16">
     {{ postHeader({
       title: title,
