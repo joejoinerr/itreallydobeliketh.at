@@ -6,7 +6,7 @@ module.exports = function() {
   }
 
   const isDev = data.env === 'development'
-  data.root = isDev ? 'https://localhost:8080/' : 'https://itreallydobeliketh.at/'
+  data.root = isDev ? 'http://localhost:8080/' : 'https://itreallydobeliketh.at/'
 
   return data;
 }
