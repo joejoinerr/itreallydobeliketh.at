@@ -17,7 +17,7 @@
 
   <title>{{ title }}{% if page.url != '/' %} | {{ site.name }}{% endif %}</title>
   <link rel="canonical" href="{{ canonical or page.url | fullurl }}">
-  <link rel="alternate" type="application/rss+xml" href="{{ '/feed.xml' | fullurl }}">
+  <link rel="alternate" type="application/atom+xml" href="{{ '/feed.xml' | fullurl }}">
   {% include 'metadata.njk' %}
   {% endblock -%}
 </head>
