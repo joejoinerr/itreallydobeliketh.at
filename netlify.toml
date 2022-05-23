@@ -7,3 +7,8 @@ force = true
 from = "http://itreallydobelikethat.netlify.app/*"
 to = "https://itreallydobeliketh.at/:splat"
 force = true
+
+[[headers]]
+    for = "/feed.xml"
+        [headers.values]
+            Content-Type = "application/atom+xml"
