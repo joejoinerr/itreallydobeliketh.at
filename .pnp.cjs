@@ -55,6 +55,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["gulp-rev-rewrite", "npm:4.0.0"],\
             ["imagemin-pngquant", "npm:9.0.2"],\
             ["luxon", "npm:1.26.0"],\
+            ["markdown-it", "npm:13.0.1"],\
             ["npm-run-all", "npm:4.1.5"],\
             ["postcss", "npm:8.2.8"],\
             ["postcss-import", "virtual:fc7cd3aa02fcda2d686d66feeff64d746ac49c17bc259496e0bcceab2cacded000acc4aaee8a9dc97499d39afd74772659713555069cc54736f96c2d54fd55e8#npm:14.0.0"],\
@@ -8436,6 +8437,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["gulp-rev-rewrite", "npm:4.0.0"],\
             ["imagemin-pngquant", "npm:9.0.2"],\
             ["luxon", "npm:1.26.0"],\
+            ["markdown-it", "npm:13.0.1"],\
             ["npm-run-all", "npm:4.1.5"],\
             ["postcss", "npm:8.2.8"],\
             ["postcss-import", "virtual:fc7cd3aa02fcda2d686d66feeff64d746ac49c17bc259496e0bcceab2cacded000acc4aaee8a9dc97499d39afd74772659713555069cc54736f96c2d54fd55e8#npm:14.0.0"],\
@@ -8813,6 +8815,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["uc.micro", "npm:1.0.6"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:4.0.1", {\
+          "packageLocation": "./.yarn/cache/linkify-it-npm-4.0.1-9c7d5a3cd6-3e0a299212.zip/node_modules/linkify-it/",\
+          "packageDependencies": [\
+            ["linkify-it", "npm:4.0.1"],\
+            ["uc.micro", "npm:1.0.6"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["liquidjs", [\
@@ -9157,6 +9167,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["argparse", "npm:2.0.1"],\
             ["entities", "npm:2.1.0"],\
             ["linkify-it", "npm:3.0.3"],\
+            ["mdurl", "npm:1.0.1"],\
+            ["uc.micro", "npm:1.0.6"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:13.0.1", {\
+          "packageLocation": "./.yarn/cache/markdown-it-npm-13.0.1-dcb1a8675c-faf5891d38.zip/node_modules/markdown-it/",\
+          "packageDependencies": [\
+            ["markdown-it", "npm:13.0.1"],\
+            ["argparse", "npm:2.0.1"],\
+            ["entities", "npm:3.0.1"],\
+            ["linkify-it", "npm:4.0.1"],\
             ["mdurl", "npm:1.0.1"],\
             ["uc.micro", "npm:1.0.6"]\
           ],\

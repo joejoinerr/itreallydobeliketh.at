@@ -25,6 +25,15 @@ module.exports = function(eleventyConfig) {
     return new URL(url, site.root).href;
   });
 
+  // Set Markdown options
+  let markdownIt = require("markdown-it");
+  let options = {
+    html: true,
+    linkify: true,
+    typographer: true
+  };
+  eleventyConfig.setLibrary("md", markdownIt(options));
+
   return {
     dir: {
       input: 'src',
