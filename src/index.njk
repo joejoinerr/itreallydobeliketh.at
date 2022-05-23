@@ -9,7 +9,7 @@ title: It Really Do Be Like That
       <strong><em>It really do be like that</em></strong> is my blog about anything and nothing, but mainly design, code, music and automation.
     </p>
 
-    <div class="text-dark-900">
+    <ol class="text-dark-900">
       {% from 'feed-post.njk' import feedPost %}
       {%- for post in collections.posts | reverse -%}
         {# Use the feed_post component to keep format consistent #}
@@ -25,6 +25,6 @@ title: It Really Do Be Like That
           classes: feedPostClasses
         }) }}
       {%- endfor -%}
-    </div>
+    </ol>
   </div>
 {% endblock %}
