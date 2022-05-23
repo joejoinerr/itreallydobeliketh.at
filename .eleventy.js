@@ -1,10 +1,12 @@
 const speedDate = require('speed-date');
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 const site = require('./src/_data/site')();
 
 module.exports = function(eleventyConfig) {
   // Install plugins
   eleventyConfig.addPlugin(syntaxHighlight);
+  eleventyConfig.addPlugin(pluginRss);
 
   // Allow top-level and page-level data to be combined
   eleventyConfig.setDataDeepMerge(true);
