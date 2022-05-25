@@ -9,7 +9,7 @@ I freaking love onion bhaji. So I tried all the onion bhajis that I could get my
 
 ## Manjit's Kitchen (Leeds) - 10/10
 
-Truly one of the best bhaji's I've tried, if not the most conventional. You get an absolute MOUNTAIN of bhaji bits, rather than individual pieces, for about £5 and they're an awesome accompaniment to a good curry. Strongly recommend.
+Truly one of the best bhajis I've tried, if not the most conventional. You get an absolute MOUNTAIN of bhaji bits, rather than individual pieces, for about £5 and they're an awesome accompaniment to a good curry. Strongly recommend.
 
 ## Grove Cafe (Leeds) - 9/10
 
@@ -29,4 +29,4 @@ These ones are quite simple but a little lacking in depth of flavour. Also I'm n
 
 ----
 
-If you have any recommendations for me in the UK (mainly Leeds) then please [let me know!](https://twitter.com/intent/tweet?text=@joejoinerr%20You%20should%20try%20the%20onion%20bhaji%20at%20)
+If you have any recommendations for me in the UK (mainly Leeds) then please [let me know!](https://twitter.com/intent/tweet?text=@joejoinerr%20You%20should%20try%20the%20onion%20bhaji%20at)
