@@ -1,0 +1,14 @@
+{% extends './base.njk' %}
+
+{% block body %}
+  {% from 'post-header.njk' import postHeader %}
+  <article class="mb-16">
+    {{ postHeader({
+      title: title,
+      theme: theme
+    }) }}
+    <div class="max-w-prose  mx-auto  prose  px-4  text-dark-900">
+      {{ content | safe }}
+    </div>
+  </article>
+{% endblock %}
