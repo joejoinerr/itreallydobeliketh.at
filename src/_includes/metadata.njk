@@ -1,13 +1,12 @@
 <meta property="og:title" content="{{ title }}">
 {% if description %}<meta name="description" property="og:description" content="{{ description }}">{% endif %}
 <meta property="og:url" content="{{ canonical or page.url | fullurl }}">
+<meta property="og:type" content="{% if (tags or []).indexOf('posts') > -1 %}article{% else %}website{% endif %}">
+<meta name="twitter:card" content="summary{% if image %}_large_image{% endif %}">
 
 {%- if image %}
   <meta property="og:image" content="{{ image }}">
-  <meta name="twitter:card" content="summary_large_image">
 {%- endif %}
-
-{% if site.theme_color %}<meta name="theme-color" content="{{ site.theme_color }}">{% endif %}
 
 {% if noindex %}<meta name="robots" content="noindex">{% endif %}
 
