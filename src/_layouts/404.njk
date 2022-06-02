@@ -1,0 +1,16 @@
+{% extends './base.njk' %}
+
+{% block header %}
+    <header class="max-w-prose  mx-auto  flex  justify-center  pt-6  pl-2  pr-4">
+        <a class="inline-block" href="{{ '/' | fullurl }}">
+        {% from 'itreallydobelikethat-logo.njk' import siteLogo %}
+        {{ siteLogo() }}
+        </a>
+    </header>
+{% endblock %}
+
+{% block body %}
+    {{ content | safe }}
+{% endblock %}
+
+{% block footer %}{% endblock %}
