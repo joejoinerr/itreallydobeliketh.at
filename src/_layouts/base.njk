@@ -42,7 +42,7 @@
       {% endif %}
     {% endif %}
 
-    <header class="{{ wrapperClasses }}">
+    <header{% if wrapperClasses %} class="{{ wrapperClasses }}"{% endif %}>
       <div class="max-w-prose  mx-auto  pt-6  pl-2  pr-4">
         <a class="inline-block" href="{{ '/' | fullurl }}">
           {% from 'itreallydobelikethat-logo.njk' import siteLogo %}
@@ -59,8 +59,10 @@
   {%- endblock %}
   </main>
 
-  <footer class="mt-8  mb-4  text-center  text-dark-500">
-    Made by <a class="underline" href="https://twitter.com/joejoinerr">{{ site.author }}</a>
-  </footer>
+  {% block footer %}
+    <footer class="mt-8  mb-4  text-center  text-dark-500">
+      Made by <a class="underline" href="https://twitter.com/joejoinerr">{{ site.author }}</a>
+    </footer>
+  {% endblock %}
 </body>
 </html>
