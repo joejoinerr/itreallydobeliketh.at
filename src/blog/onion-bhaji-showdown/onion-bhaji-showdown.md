@@ -9,7 +9,14 @@ I freaking love onion bhaji. So I tried all the onion bhajis that I could get my
 
 ## Manjit's Kitchen (Leeds) - 10/10
 
-Truly one of the best bhajis I've tried, if not the most conventional. You get an absolute MOUNTAIN of bhaji bits, rather than individual pieces, for about £5 and they're an awesome accompaniment to a good curry. Strongly recommend.
+<picture>
+    <source type="image/webp" srcset="manjits-bhaji.webp">
+    <img src="manjits-bhaji.jpg" width="550" height="440" alt="The ring-shaped onion bhajis from Aagrah, with side salad.">
+</picture>
+
+_Thanks Uber Eats for the pic until I get my own._
+
+Truly one of the best bhajis I've tried, if not the most conventional. You get an absolute MOUNTAIN of bhaji bits, rather than individual pieces, for about £5 and they're an awesome accompaniment to a good curry. The flavour is excellent and portion size couldn't be better. Strongly recommend.
 
 ## Grove Cafe (Leeds) - 9/10
 
@@ -26,6 +33,15 @@ A tasty portion here, nice herbs, very street foody again. Can sometimes be a li
 ## Bradford Curry House (Leeds) - 5/10
 
 These ones are quite simple but a little lacking in depth of flavour. Also I'm not keen on the flat ones for absolutely no good reason. That being said, their curries are really good and cheap and these make a nice little accompaniment.
+
+## Aagrah (Leeds) - 6/10
+
+<picture>
+    <source type="image/webp" srcset="aagrah-bhaji.webp">
+    <img src="aagrah-bhaji.jpg" width="1400" height="1050" alt="The ring-shaped onion bhajis from Aagrah, with side salad.">
+</picture>
+
+I went to Aagrah for the first time recently. These ones were interesting, more of a chunky onion ring. They were quite nice and light as a starter, the inside was fluffy and crisp. A little lacking in flavour for me --- luckily we had some dipping sauces. Not the best but good to try.
 
 ----
 
