@@ -60,8 +60,13 @@
   </main>
 
   {% block footer %}
-    <footer class="mt-8  mb-4  text-center  text-dark-500">
-      Made by <a class="underline" href="https://twitter.com/joejoinerr">{{ site.author }}</a>
+    <footer class="flex  justify-between  max-w-prose  mx-auto  mt-8  mb-4  pt-4  px-4  border-t  border-dark-200  text-dark-500">
+      <div>
+        Made by <a class="underline" href="https://twitter.com/joejoinerr">{{ site.author }}</a>
+      </div>
+      <div>
+        <a class="underline" href="/about">About this site</a>
+      </div>
     </footer>
   {% endblock %}
 </body>
