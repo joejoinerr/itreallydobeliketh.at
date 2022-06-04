@@ -25,6 +25,13 @@ module.exports = function(eleventyConfig) {
     return new URL(url, site.root).href;
   });
 
+  eleventyConfig.addCollection("sitemap", function(collectionApi) {
+    return collectionApi.getAll().filter(function(item) {
+      let inSitemap = !item.data.canonical && !item.data.noindex && !item.data.excludeFromSitemap;
+      return inSitemap;
+    });
+  });
+
   // Set Markdown options
   let markdownIt = require("markdown-it");
   let options = {

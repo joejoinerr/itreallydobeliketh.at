@@ -1,0 +1,7 @@
+---
+permalink: /sitemap.txt
+eleventyExcludeFromCollections: true
+---
+{% for page in collections.sitemap -%}
+{{ page.url | fullurl }}
+{% endfor -%}
