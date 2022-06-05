@@ -1,8 +1,7 @@
 module.exports = {
-  purge: [
-    './src/**/*.html',
-    './src/**/*.twig',
-    './src/**/*.njk'
+  content: [
+    './src/**/*.{html,twig,njk,liquid,md}',
+    './.eleventy.js'
   ],
   theme: {
     fontFamily: {
