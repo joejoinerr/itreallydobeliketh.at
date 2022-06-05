@@ -6867,6 +6867,7 @@ fsevents@^1.2.7:
     imagemin-pngquant: ^9.0.2
     luxon: ^1.26.0
     markdown-it: ^13.0.1
+    markdown-it-container: ^3.0.0
     npm-run-all: ^4.1.5
     postcss: ^8.2.8
     postcss-import: ^14.0.0
@@ -7527,6 +7528,13 @@ fsevents@^1.2.7:
   dependencies:
     object-visit: ^1.0.0
   checksum: c27045a5021c344fc19b9132eb30313e441863b2951029f8f8b66f79d3d8c1e7e5091578075a996f74e417479506fe9ede28c44ca7bc351a61c9d8073daec36a
+  languageName: node
+  linkType: hard
+
+"markdown-it-container@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "markdown-it-container@npm:3.0.0"
+  checksum: 8638a2f7587afe0c7c725558599d541fac46f8578b7ba2a7d305d87db8549d07edfb89c59147d0d17ffa189c8d39eff3f16a80613ec7aaf92af8ead713292693
   languageName: node
   linkType: hard
 

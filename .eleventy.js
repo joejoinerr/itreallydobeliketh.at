@@ -33,13 +33,13 @@ module.exports = function(eleventyConfig) {
   });
 
   // Set Markdown options
-  let markdownIt = require("markdown-it");
-  let options = {
+  let markdownIt = require("markdown-it")({
     html: true,
     linkify: true,
     typographer: true
-  };
-  eleventyConfig.setLibrary("md", markdownIt(options));
+  });
+  markdownIt.use(require('markdown-it-container'), 'note');
+  eleventyConfig.setLibrary("md", markdownIt);
 
   return {
     dir: {

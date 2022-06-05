@@ -56,6 +56,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["imagemin-pngquant", "npm:9.0.2"],\
             ["luxon", "npm:1.26.0"],\
             ["markdown-it", "npm:13.0.1"],\
+            ["markdown-it-container", "npm:3.0.0"],\
             ["npm-run-all", "npm:4.1.5"],\
             ["postcss", "npm:8.2.8"],\
             ["postcss-import", "virtual:fc7cd3aa02fcda2d686d66feeff64d746ac49c17bc259496e0bcceab2cacded000acc4aaee8a9dc97499d39afd74772659713555069cc54736f96c2d54fd55e8#npm:14.0.0"],\
@@ -8438,6 +8439,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["imagemin-pngquant", "npm:9.0.2"],\
             ["luxon", "npm:1.26.0"],\
             ["markdown-it", "npm:13.0.1"],\
+            ["markdown-it-container", "npm:3.0.0"],\
             ["npm-run-all", "npm:4.1.5"],\
             ["postcss", "npm:8.2.8"],\
             ["postcss-import", "virtual:fc7cd3aa02fcda2d686d66feeff64d746ac49c17bc259496e0bcceab2cacded000acc4aaee8a9dc97499d39afd74772659713555069cc54736f96c2d54fd55e8#npm:14.0.0"],\
@@ -9181,6 +9183,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["linkify-it", "npm:4.0.1"],\
             ["mdurl", "npm:1.0.1"],\
             ["uc.micro", "npm:1.0.6"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["markdown-it-container", [\
+        ["npm:3.0.0", {\
+          "packageLocation": "./.yarn/cache/markdown-it-container-npm-3.0.0-e3348fcf77-8638a2f758.zip/node_modules/markdown-it-container/",\
+          "packageDependencies": [\
+            ["markdown-it-container", "npm:3.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
