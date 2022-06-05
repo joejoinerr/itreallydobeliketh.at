@@ -51,11 +51,11 @@ module.exports = {
         300: 'hsl(206,93%,73%)',
         200: 'hsl(204,100%,86%)',
         100: 'hsl(202,100%,95%)',
-      }
+      },
+      current: 'currentColor'
     },
     extend: {},
   },
-  variants: {},
   plugins: [
     require('@tailwindcss/typography')
   ],
