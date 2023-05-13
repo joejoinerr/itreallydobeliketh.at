@@ -33,7 +33,7 @@ A tasty portion here, nice herbs, very street foody again. Can sometimes be a li
 ## Mama Mia (Leicester) - 7/10
 
 <picture>
-    <source type="image/webp" srcset="mama-mia.webp">
+    <source type="image/webp" srcset="mama-mia-bhaji.webp">
     <img src="mama-mia-bhaji.jpg" width="1200" height="795" alt="Onion bhajis from Mama Mia in Leicester, with Jethro's lemon and chilli sauce.">
 </picture>
 
