@@ -34,7 +34,7 @@ A tasty portion here, nice herbs, very street foody again. Can sometimes be a li
 
 <picture>
     <source type="image/webp" srcset="mama-mia-bhaji.webp">
-    <img src="mama-mia-bhaji.jpg" width="1200" height="795" alt="Onion bhajis from Mama Mia in Leicester, with Jethro's lemon and chilli sauce.">
+    <img src="mama-mia-bhaji.jpg" width="1200" height="795" loading="lazy" alt="Onion bhajis from Mama Mia in Leicester, with Jethro's lemon and chilli sauce.">
 </picture>
 
 Got these from the Great Yorkshire Vegan Festival. Big box for £5 I think. Very enjoyable, I think on par with Cat's PJs and Bundo. Had them with some Jethro's sauce which really upgraded the flavour. For some reason I really like the ones with the green leaves in --- not sure what those are though? There were a few more to try at the fest but I only came back with these since I didn't want to have an excess of bhajis 😂
@@ -43,7 +43,7 @@ Got these from the Great Yorkshire Vegan Festival. Big box for £5 I think. Very
 
 <picture>
     <source type="image/webp" srcset="aagrah-bhaji.webp">
-    <img src="aagrah-bhaji.jpg" width="1400" height="1050" alt="The ring-shaped onion bhajis from Aagrah, with side salad.">
+    <img src="aagrah-bhaji.jpg" width="1400" height="1050" loading="lazy" alt="The ring-shaped onion bhajis from Aagrah, with side salad.">
 </picture>
 
 I went to Aagrah for the first time recently. These ones were interesting, more of a chunky onion ring. They were quite nice and light as a starter, the inside was fluffy and crisp. A little lacking in flavour for me --- luckily we had some dipping sauces. Not the best but good to try.
