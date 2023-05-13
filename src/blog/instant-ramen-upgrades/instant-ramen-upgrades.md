@@ -36,4 +36,4 @@ I've tried all of these and my personal favourite combo is dried seaweed, enoki 
 
 I'll continue to add to this list as I find more awesome things to add to ramen. [Let me know what you like to add to yours!](https://twitter.com/intent/tweet?text=@joejoinerr)
 
-_Dislaimer: I don't claim to be a ramen expert. I'm just a white guy that likes a good instant ramen._
+_Dislaimer: I don't claim to be a ramen expert. I'm just a white person that likes a good instant ramen._
