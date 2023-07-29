@@ -9,7 +9,7 @@ to = "https://itreallydobeliketh.at/:splat"
 force = true
 
 [[redirects]]
-from = "https://joejoinerr.itreallydobeliketh.at/*"
+from = "https://joejoinerr.itreallydobeliketh.at"
 to = "https://bsky.app/profile/joejoinerr.itreallydobeliketh.at"
 force = true
 
