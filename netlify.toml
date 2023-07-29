@@ -8,6 +8,11 @@ from = "http://itreallydobelikethat.netlify.app/*"
 to = "https://itreallydobeliketh.at/:splat"
 force = true
 
+[[redirects]]
+from = "https://joejoinerr.itreallydobeliketh.at/*"
+to = "https://bsky.app/profile/joejoinerr.itreallydobeliketh.at"
+force = true
+
 [[headers]]
     for = "/feed.xml"
         [headers.values]
